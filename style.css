@@ -1,0 +1,94 @@
+/* 
+#f1f3f5
+#495057
+#e3fafc
+#c5f6fa
+#0b7285
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+/* HEADER STYLING */
+
+.header {
+  background-color: #f1f3f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-img {
+  width: 110px;
+  height: 100%;
+}
+
+.main-title {
+  font-size: 42px;
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+  color: #212529;
+  letter-spacing: 5px;
+}
+
+.infos {
+  display: flex;
+  gap: 8px;
+  margin-right: 10px;
+}
+
+.logos {
+  font-size: 36px;
+  color: #212529;
+  padding: 4px;
+}
+
+.logos:hover {
+  background-color: #dee2e6;
+  border-radius: 8px;
+}
+
+/* CALENDAR STYLING + GRID */
+
+.main-calendar {
+  margin: 40px auto;
+  display: grid;
+  width: 80%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.days {
+  display: grid;
+  width: 200px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 8px, auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.week-days {
+  background-color: #f1f3f5;
+}
+
+.month {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #dee2e6;
+  color: #0b7285;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 2px;
+}
