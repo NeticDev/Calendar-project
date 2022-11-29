@@ -124,7 +124,7 @@ body {
 } */
 
 .main-calendar {
-  margin: 40px auto 40px ;
+  margin: 40px auto 40px;
   display: grid;
   width: 900px;
   height: auto;
@@ -132,6 +132,7 @@ body {
   gap: 50px;
   justify-items: center;
   align-items: center;
+
 }
 
 .month-box {
@@ -155,23 +156,23 @@ body {
 
 .grid {
   justify-items: center;
-
 }
 
 .weekdays {
-display: grid;
-grid-template-columns: 30px repeat(5, 1fr) 30px;
-justify-content: center;
-align-items: center;
-outline: 1px solid #000;
-gap: 1px;
+  display: grid;
+  font-weight: bold;
+  background-color: #f1f3f5 ;
+  grid-template-columns: 30px repeat(5, 1fr) 30px;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid #000;
+  gap: 1px;
 }
 
 .days {
-display: grid;
-grid-template-columns: 30px repeat(5, 1fr) 30px;
-gap: 1px;
-
+  display: grid;
+  grid-template-columns: 30px repeat(5, 1fr) 30px;
+  gap: 1px;
 }
 
 .days p {
