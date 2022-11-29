@@ -58,7 +58,7 @@ body {
 
 /* CALENDAR STYLING + GRID */
 
-.main-calendar {
+/* .main-calendar {
   margin: 40px auto;
   display: grid;
   width: 80%;
@@ -69,35 +69,32 @@ body {
   align-items: center;
 }
 
-.grid {
+ .grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: 30px repeat(5, 1fr) 30px;
   justify-items: center;
+  border: 1px solid #000;
 }
 
 .days {
-  border-left: 1px solid #000;
-  border-top: 1px solid #000;
-  border-radius: 0 0 0 5px;
+
 }
 
 .days p:last-of-type {
-  border-radius: 0 0 5px 0;
 }
 
 .days p:nth-last-of-type(7) {
-  border-radius: 0 0 0 5px;
+
 }
 
 .days p {
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
+  border: 1px solid #000;
 }
 
 .days p:hover {
@@ -106,8 +103,7 @@ body {
 
 .weekdays {
   background-color: #777;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+
 }
 
 .empty {
@@ -125,4 +121,81 @@ body {
   letter-spacing: 2px;
   border: 1px solid #000;
   border-radius: 5px 5px 0 0;
+} */
+
+.main-calendar {
+  margin: 40px auto 40px ;
+  display: grid;
+  width: 900px;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.month-box {
+  display: grid;
+  grid-template-rows: 30px 20px 1fr;
+  gap: 1px;
+}
+
+.month {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #dee2e6;
+  color: #0b7285;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 2px;
+  outline: 1px solid #000;
+  border-radius: 5px 5px 0 0;
+}
+
+.grid {
+  justify-items: center;
+
+}
+
+.weekdays {
+display: grid;
+grid-template-columns: 30px repeat(5, 1fr) 30px;
+justify-content: center;
+align-items: center;
+outline: 1px solid #000;
+gap: 1px;
+}
+
+.days {
+display: grid;
+grid-template-columns: 30px repeat(5, 1fr) 30px;
+gap: 1px;
+
+}
+
+.days p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  outline: 1px solid #000;
+}
+
+.days p:last-of-type {
+  border-radius: 0 0 3px 0;
+}
+
+.days p:nth-last-of-type(7) {
+  border-radius: 0 0 0 3px;
+}
+
+.empty {
+  color: #ced4da;
+}
+
+.days p:hover {
+  background-color: #dee2e6;
 }
