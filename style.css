@@ -56,7 +56,43 @@ body {
   border-radius: 8px;
 }
 
-/* CALENDAR STYLING + GRID */
+.structure {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  justify-content: center;
+  gap: 00px;
+}
+
+/* LEFT NAVIGATION STYLING */
+
+.left-navigation {
+  width: 150px;
+  margin: 40px;
+}
+
+.dark-mode {
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 40px;
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+  color: #212529;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.optList {
+  display: grid;
+  grid-template-rows: 20px repeat(20px);
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+/* CALENDAR STYLING + GRID Option 1 */
 
 /* .main-calendar {
   margin: 40px auto;
@@ -123,16 +159,19 @@ body {
   border-radius: 5px 5px 0 0;
 } */
 
+/* CALENDAR STYLING + GRID Option 2 */
+
 .main-calendar {
-  margin: 40px auto 40px;
   display: grid;
-  width: 900px;
+  width: 1300px;
   height: auto;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
   justify-items: center;
   align-items: center;
-
+  margin: 40px;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .month-box {
@@ -161,7 +200,7 @@ body {
 .weekdays {
   display: grid;
   font-weight: bold;
-  background-color: #f1f3f5 ;
+  background-color: #f1f3f5;
   grid-template-columns: 30px repeat(5, 1fr) 30px;
   justify-content: center;
   align-items: center;
